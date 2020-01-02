@@ -3,21 +3,6 @@ import ReactDOM from 'react-dom';
 
 const Display = props => <div>{props.name}: {props.value}</div>
 
-const All = props => <div>{props.name}: {props.value1 + props.value2 +
-  props.value3}</div>
-
-const Average = props =>
-  <div>
-    {props.name}: {(props.value1 +
-    props.value3 * -1) / (props.value1 + props.value2 + props.value3)}
-  </div>
-
-const Positive = props =>
-  <div>
-    {props.name}: {props.value1 / (props.value1 + props.value2 + props.value3) * 100 + '%'}
-  </div>
-  
-
 const Button = ({onClick, text}) => (
   <button onClick={onClick}>
     {text}
