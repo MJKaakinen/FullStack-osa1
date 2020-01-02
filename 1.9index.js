@@ -19,7 +19,7 @@ const Statistics = (props) => {
         average: {(props.value1 + props.value3 * -1) / (props.value1 + props.value2 + props.value3)}
       </div>
       <div>
-        average: {props.value1 / (props.value1 + props.value2 + props.value3) * 100 + '%'}
+        positive: {props.value1 / (props.value1 + props.value2 + props.value3) * 100 + '%'}
       </div>
     </div> 
   )
